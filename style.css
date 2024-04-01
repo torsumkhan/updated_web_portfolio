@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.mf-cursor .-icon:before {
+  transform: scale(2);
+}
+
+nav {
+  min-height: 3rem;
+  margin: 2% 8%;
+  padding-bottom: 3rem;
+}
+
+nav a {
+  font-size: 1.4rem;
+  color: lightgrey;
+  font-weight: 300;
+}
+
+.inner-nav-container {
+  display: flex;
+  justify-content: end;
+}
+
+.inner-nav-container div {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.scroll-down {
+  width: 100vw;
+  height: 20vh;
+}
+
+.title-section {
+  height: 70vh;
+  margin: 0 auto;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  transform: translateY(-80px);
+}
+
+.gallery-title-section,
+.writing-title-section {
+  height: 20vh;
+  margin: 0 auto;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-text-outer-container {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.2rem;
+}
+
+.title-container h2 {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.gallery-title-container h2 {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.writing-title-container h2 {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.gallery-text-container {
+  padding-top: 46px;
+  width: 60%;
+}
+
+.gallery-text-container p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.title-container,
+.gallery-title-container,
+.writing-title-container span {
+  font-family: "Noto Sans Arabic", serif;
+  font-weight: 200;
+}
+
+.heading-2 {
+  color: rgb(176, 175, 175);
+}
+
+.accordion-container {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+.grid-container {
+  height: 200vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+
+.grid-container a {
+  flex: 1;
+}
+
+.grid-container .writing {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.grid-container .photography,
+.special-projects,
+.social-media,
+.videos {
+  cursor: pointer;
+}
+
+.photography {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-projects {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    164deg,
+    rgba(0, 0, 0, 1) 46%,
+    rgba(42, 38, 70, 1) 87%,
+    rgba(45, 48, 73, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.special-projects p {
+  font-family: "Gloock", serif;
+  font-size: 4.2rem;
+}
+
+.photography div {
+  width: 75%;
+  height: 75%;
+}
+
+.social-media div {
+  width: 100%;
+  height: 100%;
+}
+
+.videos div {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.videos video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.photography img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.writing p {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Tiro Kannada", serif;
+}
+
+.videos p {
+  font-size: 2rem;
+  font-family: "Tiro Kannada", serif;
+}
+
+.writing:hover {
+  background-image: url("./images/newspaper.jpg");
+  padding: 3rem;
+  color: transparent;
+  background-color: black;
+}
+
+.special-projects:hover {
+  background-image: url("./images/vr-project.jpg");
+  padding: 3rem;
+  color: transparent;
+  background-size: cover;
+  background-color: black;
+}
+
+.social-media,
+.videos div {
+  display: flex;
+  justify-content: left;
+}
+
+.social-media p {
+  font-size: 4.8rem;
+  font-weight: 800;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  color: white;
+  opacity: 0;
+}
+
+#campaigns p {
+  font-size: 6.4rem;
+  font-weight: 800;
+  padding-top: 4rem;
+  transform: translateY(250px);
+  padding-left: 1rem;
+  font-weight: 800;
+  color: #e5dfd6;
+}
+
+.videos div {
+  position: relative;
+}
+
+.videos video {
+  position: absolute;
+}
+
+.videos p {
+  position: absolute;
+  color: white;
+  bottom: 40%;
+  z-index: 10;
+  left: 40%;
+  opacity: 0;
+}
+
+.photography:hover div {
+  background-image: url("./images/portfolio-image-2.jpg");
+  background-size: cover;
+  height: 75%;
+}
+
+.social-media div {
+  background-image: url("./images/programming.jpg");
+  background-size: cover;
+  background-position: center 60%;
+}
+
+#campaigns div {
+  background-image: url("./images/campaign-1.jpg");
+  background-size: cover;
+  background-position: center 60%;
+}
+
+#video-container div {
+  background-image: url("./images/video-backgroun.jpg");
+  background-size: cover;
+}
+
+.social-media:hover div {
+  background-image: url("./images/progr.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#campaigns:hover div {
+  background: linear-gradient(290deg, #235cceba, #cd9423bf),
+    url("./images/campaign-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.social-media:hover p {
+  opacity: 1;
+}
+
+.videos:hover p {
+  opacity: 1;
+}
+
+.videos:hover video {
+  display: none;
+}
+
+.photography:hover img {
+  display: none;
+}
+
+/*Gallery page */
+
+.main-image-container {
+  display: flex;
+  justify-content: center;
+}
+.main-image {
+  width: 60%;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+#gallery {
+  padding-bottom: 12px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#gallery div {
+  /* width: 60%; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+#gallery a {
+  height: 100%;
+}
+
+#gallery img {
+  width: 380px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-image-container {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.writing-section-title-container {
+  height: 60vh;
+}
+#writing-text-outer-container {
+  height: 100%;
+}
+#writing-section-container {
+  height: 100%;
+}
+
+.writing-samples {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.writing-samples-container {
+  width: 60%;
+  height: 80vh;
+}
+
+#haitat-samples {
+  flex-direction: column;
+  gap: 10px;
+}
+.paper-texture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/paper-texture.jpg");
+  height: 100%;
+}
+
+.paper-texture img {
+  border: 18px solid white;
+  width: 60%;
+}
+
+#habitat-samples-container {
+  height: 120vh;
+}
+
+#special-projects-title-container {
+  height: 20vh;
+}
+
+#blueprint-texture {
+  background-image: url("./images/blueprint.jpg");
+}
+
+#web-background {
+  background-color: #e9e8eb;
+  background-image: none;
+}
+
+#gallery-text {
+  padding-top: 6.2rem;
+}
+
+#about-section {
+  height: 70vh;
+}
+
+#about-section div {
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+#about-section p {
+  width: 600px;
+  font-size: larger;
+  color: #4b5563;
+}
+
+#about-section img {
+  width: 500px;
+}
+
+.item {
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  width: 100%;
+  padding: 1rem;
+  font-size: 30px;
+}
+.item.active .title,
+.nav-links:hover,
+.title:hover {
+  color: #d80621;
+}
+
+.content {
+  height: 0;
+  overflow: hidden;
+}
+
+.content p {
+  margin: 0;
+  padding: 2rem;
+}
+
+.details {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 48px;
+  color: white;
+}
+
+.details h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.details p {
+  padding-left: 0;
+  font-size: 1.8rem;
+  width: 60%;
+}
+
+.title {
+  font-size: 3rem;
+  padding-bottom: 42px;
+}
+
+#see-website {
+  text-decoration: none;
+  color: #1a1a1a;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: White;
+}
+
+.img-wrapper {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 42px;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mf-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  direction: ltr;
+  contain: layout style size;
+  pointer-events: none;
+  transition: opacity 0.3s, color 0.4s;
+}
+
+.mf-cursor:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  transform: scale(0.2);
+  color: #d80621;
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out, opacity 0.1s;
+}
